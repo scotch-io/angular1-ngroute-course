@@ -1,2 +1,2 @@
 # complete-angular1-routing
-Code for the Scotch School course: Complete AngularJS 1 Routing
+Code for the Scotch School course: AngularJS 1.x Component Routing
