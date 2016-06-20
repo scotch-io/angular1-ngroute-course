@@ -14,6 +14,17 @@
 		body 	{
 			padding-top: 50px;
 		}
+		footer 	{
+			padding: 15px;
+			background: #F2F2F2;
+			text-align: center;
+			color: #BBB;
+			border-radius: 5px;
+			font-size: 12px;
+		}
+		footer p 	{
+			margin: 0;
+		}
 	</style>
 	
 	<!-- JS -->
@@ -35,6 +46,7 @@
 
 	<header>
 		<div class="navbar navbar-inverse">
+		<div class="container-fluid">
 			<div class="navbar-header">
 				<a ng-href="/" class="navbar-brand">App App</a>
 			</div>
@@ -44,11 +56,14 @@
 				<li><a ng-href="contact">Contact</a></li>
 			</ul>
 		</div>
+		</div>
 	</header>
 
 	<div ng-view></div>
 
-	<p>footer</p>
+	<footer>
+		<p>Copyright &copy; 2016-5032</p>
+	</footer>
 
 </div>
 </body>
