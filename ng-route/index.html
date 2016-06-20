@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>ngRoute Example</title>
+
+	<base href="/">
+
+	<!-- CSS -->
+	<!-- get bootstrap -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+		body 	{
+			padding-top: 50px;
+		}
+	</style>
+	
+	<!-- JS -->
+	<!-- get angularjs and angular route -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+
+	<!-- our custom js -->
+	<script src="./app/app.js"></script>
+	<script src="./app/app.router.js"></script>
+	<script src="./app/app.main.js"></script>
+	<script src="./app/components/home/home.component.js"></script>
+	<script src="./app/components/about/about.component.js"></script>
+	<script src="./app/components/contact/contact.component.js"></script>
+	
+</head>
+<body ng-app="app" ng-controller="MainController as main">
+<div class="container">
+
+	<header>
+		<div class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<a ng-href="/" class="navbar-brand">App App</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a ng-href="/">Home</a></li>
+				<li><a ng-href="/about">About</a></li>
+				<li><a ng-href="contact">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div ng-view></div>
+
+	<p>footer</p>
+
+</div>
+</body>
+</html>
