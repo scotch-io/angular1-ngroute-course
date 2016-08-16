@@ -1,7 +1,7 @@
 angular
 	.module('app')
 	.component('homePage', {
-		templateUrl: './app/components/home/home.component.html',
+		templateUrl: './app/home/home.component.html',
 		controller: HomeController,
 		bindings: {
 			user: '<'
@@ -9,6 +9,7 @@ angular
 	});
 
 function HomeController() {
-	var ctrl = this;
-	ctrl.title = 'whatwhat';
+
+  console.log(this.user);
+	this.title = 'whatwhat';
 }

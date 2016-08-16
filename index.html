@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 
@@ -11,9 +11,7 @@
 	<!-- get bootstrap -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<style>
-		body 	{
-			padding-top: 50px;
-		}
+		body 	{ padding-top: 50px; }
 		footer 	{
 			padding: 15px;
 			background: #F2F2F2;
@@ -22,49 +20,26 @@
 			border-radius: 5px;
 			font-size: 12px;
 		}
-		footer p 	{
-			margin: 0;
-		}
 	</style>
-	
+
 	<!-- JS -->
 	<!-- get angularjs and angular route -->
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
 
 	<!-- our custom js -->
+	<!-- order is important -->
 	<script src="./app/app.js"></script>
 	<script src="./app/app.router.js"></script>
-	<script src="./app/app.main.js"></script>
-	<script src="./app/components/home/home.component.js"></script>
-	<script src="./app/components/about/about.component.js"></script>
-	<script src="./app/components/contact/contact.component.js"></script>
-	
+	<script src="./app/app.component.js"></script>
+	<script src="./app/home/home.component.js"></script>
+	<script src="./app/about/about.component.js"></script>
+	<script src="./app/contact/contact.component.js"></script>
+	<script src="./app/profile/profile.component.js"></script>
 </head>
-<body ng-app="app" ng-controller="MainController as main">
-<div class="container">
+<body>
 
-	<header>
-		<div class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a ng-href="/" class="navbar-brand">App App</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li><a ng-href="/">Home</a></li>
-				<li><a ng-href="/about">About</a></li>
-				<li><a ng-href="contact">Contact</a></li>
-			</ul>
-		</div>
-		</div>
-	</header>
+	<my-app></my-app>
 
-	<div ng-view></div>
-
-	<footer>
-		<p>Copyright &copy; 2016-5032</p>
-	</footer>
-
-</div>
 </body>
 </html>
