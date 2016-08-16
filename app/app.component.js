@@ -2,7 +2,7 @@ angular
 	.module('app')
 	.component('myApp', {
     templateUrl: './app/app.component.html',
-    controller: MainController
+    controller: AppController
   });
 
-function MainController() {}
+function AppController() {}
